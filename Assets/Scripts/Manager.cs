@@ -23,6 +23,10 @@ public class Manager : MonoBehaviour
     persons.Add(new Person());
     persons.Add(new Person());
     persons.Add(new Person());
+    persons.Add(new Person());
+    persons.Add(new Person());
+    persons.Add(new Person());
+
 
     cpm.InsListOfPersons(persons);
   }

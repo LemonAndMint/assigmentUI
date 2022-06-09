@@ -9,7 +9,7 @@ public class PersonButtonManager : MonoBehaviour
   public Text desc;
   //yaratılacak button, person ya da child olabilir
   public GameObject ChildButton;
-  public GameObject panel1;
+  public GameObject PersonGridSystem;
   public Vector2 startPoint; //Listenin başlayacağı yeri belirler, görsel olarak ayarlamalar daha rahat yapılabilir.
   //butonlar arası boşluk
   public float space;
@@ -21,7 +21,7 @@ public class PersonButtonManager : MonoBehaviour
 
     foreach(Child child in childs){
       
-      tempButton = Instantiate(ChildButton, tempPosition, Quaternion.identity, panel1.GetComponent<RectTransform>());
+      tempButton = Instantiate(ChildButton, tempPosition, Quaternion.identity, PersonGridSystem.GetComponent<RectTransform>());
 
       tempButton.GetComponent<ShowChildAttributes>().desc = desc;
       tempButton.GetComponent<ShowChildAttributes>().child = child;

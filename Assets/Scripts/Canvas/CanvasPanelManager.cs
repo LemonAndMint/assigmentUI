@@ -11,7 +11,8 @@ public class CanvasPanelManager : MonoBehaviour
   public Text desc;
   //yaratılacak button, person ya da child olabilir
   public GameObject PersonButton;
-  public GameObject panel1;
+  public GameObject PersonGridSystem;
+  public GameObject ChildGridSystem;
   public Vector2 startPoint; //Listenin başlayacağı yeri belirler, görsel olarak ayarlamalar daha rahat yapılabilir.
   //butonlar arası boşluk
   public float space;
@@ -23,15 +24,16 @@ public class CanvasPanelManager : MonoBehaviour
 
     foreach(Person person in persons){
       
-      tempButton = Instantiate(PersonButton, tempPosition, Quaternion.identity, panel1.GetComponent<RectTransform>());
+      tempButton = Instantiate(PersonButton, tempPosition, Quaternion.identity, PersonGridSystem.GetComponent<RectTransform>());
       
       //InsListOfChilds metodunu kullanmak için tekrardan CanvasPanelManager ekledik, değişen tek şey panel, bu noktada buton, ve başlangıç noktası 
-      tempButton.GetComponent<PersonButtonManager>().panel1 = tempButton;
-      tempButton.GetComponent<PersonButtonManager>().startPoint = tempButton.transform.position;
+      tempButton.GetComponent<PersonButtonManager>().PersonGridSystem = ChildGridSystem;
+      tempButton.GetComponent<PersonButtonManager>().startPoint = startPoint;
       tempButton.GetComponent<PersonButtonManager>().space = space;
       tempButton.GetComponent<PersonButtonManager>().desc = desc;
       //butonla ona atanmış person nesnesiyle bağdaştırıyoruz
       tempButton.GetComponent<ButtonBehavior>().person = person;
+      tempButton.GetComponent<ButtonBehavior>().childPanel = ChildGridSystem;
       //butonun textini person nesnesiyle bağdaştırıyoruz
       tempButton.transform.GetChild(0).GetComponent<Text>().text = tempButton.GetComponent<ButtonBehavior>().person.getName();  
 
