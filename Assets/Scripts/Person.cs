@@ -50,7 +50,7 @@ public class Person
                 bool isMarried,
                 List<Child> childs){
 
-    //#TODO merge 24th line of person and this person by something, make it more compact and less eye damaging
+    //#TODO merge 24th line of person and this person construction by something, make it more compact and less eye damaging
 
     this.name = name;
     this.surname = surname;

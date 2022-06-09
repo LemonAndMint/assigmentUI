@@ -206,7 +206,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 5965968147315228657}
         m_TargetAssemblyTypeName: ButtonBehavior, Assembly-CSharp
-        m_MethodName: showChilds
+        m_MethodName: manageVisibilityChilds
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -228,6 +228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b495d86912dc8b44f8a3903318ddbd92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cpm: {fileID: 5388592357500443454}
 --- !u!114 &5388592357500443454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,6 +241,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 660654f61fd76c844b2b2b30cbfc64f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  desc: {fileID: 0}
   PersonButton: {fileID: 8984335985826245300, guid: 325302ab2a1c80d4e92f961cf9816783, type: 3}
   panel1: {fileID: 0}
   startPoint: {x: 0, y: 0}
