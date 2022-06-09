@@ -8,12 +8,12 @@ public class ButtonBehavior : MonoBehaviour
 {
   private bool isShown;
   public Person person;
-  public CanvasPanelManager cpm;
+  public PersonButtonManager pbm;
   private void Start() {
     isShown = false;
   }
   public void manageVisibilityChilds(){
-    if(isShown != true){cpm.InsListOfChilds(person.getChilds()); isShown = true;}
+    if(isShown != true){pbm.InsListOfChilds(person.getChilds()); isShown = true;}
     else
     {
       for(int i = 1; i < gameObject.transform.childCount; i++){

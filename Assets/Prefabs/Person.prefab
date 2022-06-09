@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 1166124366318939800}
   - component: {fileID: 5087317425453673402}
   - component: {fileID: 5965968147315228657}
-  - component: {fileID: 5388592357500443454}
+  - component: {fileID: 4254533063454146374}
   m_Layer: 5
   m_Name: Person
   m_TagString: Untagged
@@ -228,8 +228,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b495d86912dc8b44f8a3903318ddbd92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cpm: {fileID: 5388592357500443454}
---- !u!114 &5388592357500443454
+  pbm: {fileID: 4254533063454146374}
+--- !u!114 &4254533063454146374
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -238,11 +238,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 8984335985826245300}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 660654f61fd76c844b2b2b30cbfc64f0, type: 3}
+  m_Script: {fileID: 11500000, guid: 97c77e7a62b30af41aee0702ff1efea9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   desc: {fileID: 0}
-  PersonButton: {fileID: 8984335985826245300, guid: 325302ab2a1c80d4e92f961cf9816783, type: 3}
+  ChildButton: {fileID: 8984335985826245300, guid: 325302ab2a1c80d4e92f961cf9816783, type: 3}
   panel1: {fileID: 0}
   startPoint: {x: 0, y: 0}
   space: 0
